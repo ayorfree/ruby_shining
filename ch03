@@ -1,0 +1,33 @@
+# Class
+
+class Car
+  @@no_of_cars = 0
+  def initialize(id, name, country)
+    @car_id = id
+    @car_name = name
+    @car_country = country
+  end
+  def details()
+    puts "Car id is #@car_id"
+    puts "Car name is #@car_name"
+    puts "Car country is #@car_country"
+  end
+  def total_no_of_cars
+    @@no_of_cars += 1
+    puts "Total Number of Cars is #@@no_of_cars"
+  end
+end
+
+car1 = Car.new("1", "BWM", "GERMAN")
+car2 = Car.new("2", "TOYOTA", "JAPAN")
+car3 = Car.new("3", "DONGFENG", "CHINA")
+
+car1.details
+car1.total_no_of_cars
+
+car2.details
+car2.total_no_of_cars
+
+car3.details
+car3.total_no_of_cars
+
