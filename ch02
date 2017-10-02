@@ -1,0 +1,69 @@
+# 001 DATA TYPE
+# NUMBER
+# Integer
+
+123
+1_23
+-500
+0377
+0xff
+0b1011
+"a".ord
+?\n
+1234567890334342
+
+# Float
+123.4
+1.0e6
+4E20
+4e+20
+
+f1=0.0
+f2=2.1
+f3=0.00000001
+puts f3
+
+# arithmetic operation
+
+puts 2**(1/4) #1与4的商为0，然后2的0次方为1
+puts 16**(1/4.0) #1与4.0的商为0.25（四分之一），然后开四次方根
+
+a1=0
+a2=1_000_000
+a3=0xa
+puts a1,a2
+puts a3
+
+# String
+
+puts 'escape using "\\"'
+puts 'That\'s right'
+
+# #{expr} 替换任意ruby表达式为一个字符串
+
+puts "相乘：#{20*20*30}"
+
+name = "Python"
+
+puts name
+puts "#{name + " is okay"}"
+
+# 002 Array
+
+ary = [0.001, "Lucy", 32, "Jack", "LAST_OF_ENGLAND"]
+ary.each do |i|
+  puts i
+end
+
+# 003 Hash
+
+has = {"red" => 0xf00, "blue" => 0xf03, "green" => 0xf12}
+has.each do |key, value|
+  print key, " is ", value, "\n"
+end
+
+# 004 Range
+
+(10..15).each do |n|
+  print n, ' '
+end
