@@ -1,0 +1,24 @@
+# block
+
+def test
+  puts "inside test method"
+  yield
+  puts "inside test method again"
+  yield
+end
+
+test {puts "inside block"}
+
+# yield
+
+
+def test1
+  puts "inside test1 method"
+  yield 5
+  puts "inside test1 method again"
+  yield 100
+end
+
+test1 {|i| puts "inside #{i}"}
+
+# BEGIN & END
