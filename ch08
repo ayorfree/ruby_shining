@@ -1,0 +1,47 @@
+# method
+
+def test(a1 = "ruby", a2 = "perl")
+  puts "pl is #{a1}"
+  puts "pl is #{a2}"
+end
+
+test "c", "c++"
+test
+
+def test1
+  i = 199
+  j = 34
+  k = 30
+end
+
+puts defined? test1
+puts test1
+
+def test2
+  i = 1
+  j = 2
+  k = 3
+  return i, j, k
+end
+
+var = test2
+puts var
+
+def sample(*test)
+  puts "arg number is #{test.length}"
+  for i in 0...test.length
+    puts "arg value is #{test[i]}"
+  end
+end
+
+sample "lily", "lucy", "bob"
+sample "m", "7", "dic", "oooo"
+
+# alias
+
+alias foo bar # 为bar 定义了别名为 foo
+alias $MATCH $C # 为 $& 定义了别名为 $MATCH
+
+# undef
+
+undef bar # 取消名为 bar的方法定义
