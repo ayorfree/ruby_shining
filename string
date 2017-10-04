@@ -1,0 +1,24 @@
+# sigle quote string
+
+' this is a ruby string'
+
+'Won\'t you read 0\' reilly\' book?'
+
+# double quote string
+
+name1  = "Joe"
+name2 = "Mary"
+puts "你好， #{name1}, #{name2}在哪？"
+
+x, y, z = 12, 36, 72
+
+puts "x的值为#{x}"
+puts "x + y的值为#{x + y}"
+puts "x + y + z的平均值为#{(x + y + z) / 3}"
+
+desc1 = %q|string "for" ruby can use '' and "" |
+desc2 = %Q|string "for" ruby can use '' and "" |
+
+puts desc1
+puts desc2
+
