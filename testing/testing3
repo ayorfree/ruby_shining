@@ -1,0 +1,42 @@
+class PL
+  def number
+    @number = 2
+    local = 5
+    while @number < local
+      puts "pl number is #@number above five"
+      @number += 1
+    end
+  end
+  def circle
+    @number = 0
+    begin
+    puts "pl number is #@number and below 10"
+    @number += 1
+    end while @number < 10
+  end
+  def break
+    @number = 0
+    for @number in (0..5)
+      if @number > 2 then
+        break
+      end
+      puts "number is #@number in the range"
+    end
+  end
+  def next
+    @number = 0
+    for @number in (0..5)
+      if @number <3 then
+        next
+      end
+      puts "number is #@number and in the range"
+    end
+  end
+end
+
+
+num = PL.new
+num.circle
+num.number
+num.break
+num.next

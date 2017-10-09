@@ -1,7 +1,9 @@
 
-$like = "i like eat this friut"
-VAL = "50KG"
+# global_variable $ golbal_constant
+$like = "i like eat this friut" # global_variable
+VAL = "50KG" # global_constant
 
+# class & object
 class Apple
   VAL = "100KG"
   @@no_of_types = 0
@@ -24,6 +26,13 @@ class Apple
     puts "Total weight is #{VAL}"
   end
 end
+
+=begin
+ $ means global_varibale
+ @ means instant_varibale
+ @@ means class_varibale
+ other means local_varibale
+=end
 
 
 yellowcow = Apple.new("yellowcow", 10, "tianshui")

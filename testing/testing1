@@ -1,0 +1,52 @@
+class Kiss
+  def initialize(woman, man)
+    @woman = woman
+    @man = man
+  end
+  def kiss
+    if @woman == 1
+      puts "single kiss"
+    elsif @woman == 2
+      puts "double kiss"
+      else puts "...."
+    end
+  end
+  def kiss2
+    puts "kiss again" if @man == 1
+  end
+  def kiss3
+    unless @woman == 1
+      puts "not singel kiss"
+    end
+  end
+  def kiss4
+    puts "not single kiss" unless @woman == 1
+  end
+  def kiss5
+    case @woman
+      when 1
+        puts "single"
+      when 2
+        puts "double"
+      when 3
+        puts "three p"
+      else
+        puts "....."
+    end
+  end
+  def kiss6
+    case
+    when @woman == 1 then puts "single kiss"
+      when @woman == 2 then puts "double kiss"
+      when @woman == 3 then puts "three kisses"
+  end
+  end
+  alias kiss7 kiss6 # alias
+  undef kiss4 # undef
+end
+
+
+kiss = Kiss.new(3, 3)
+
+
+kiss.kiss7
