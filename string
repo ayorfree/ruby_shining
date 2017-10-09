@@ -22,3 +22,15 @@ desc2 = %Q|string "for" ruby can use '' and "" |
 puts desc1
 puts desc2
 
+myStr = String.new("THIS IS TEST")
+foo = myStr.downcase
+
+puts "#{foo}"
+
+bar = myStr*5
+
+puts "#{bar}"
+
+puts "#{foo + bar}"
+
+puts "#{myStr.capitalize}"
